@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Free Auto Refresh</title>
+    <link rel="stylesheet" href="css/popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="title" data-i18n="appName">Free Auto Refresh</div>
+      <div class="app-inner">
+        <div id="home" class="content">
+          <div class="section-label" data-i18n="inputLabel">Refresh within seconds:</div>
+          <div class="main-form">
+            <input
+              id="interval"
+              min="1"
+              type="number"
+              placeholder="Refresh interval"
+              class="seconds-input stop"
+              data-i18n="inputPlaceholder"
+            />
+            <button class="btn stop" id="btn"></button>
+          </div>
+          <div class="section-label" data-i18n="quickStartLabel">Quick start:</div>
+          <div id="quick-start-wrapper">
+            <div class="quick-start">
+              <div data-value="1">1s</div>
+              <div data-value="3">3s</div>
+              <div data-value="5">5s</div>
+              <div data-value="10">10s</div>
+              <div data-value="15">15s</div>
+              <div data-value="20">20s</div>
+              <div data-value="25">25s</div>
+              <div data-value="30">30s</div>
+            </div>
+            <div class="quick-start">
+              <div data-value="60">1min</div>
+              <div data-value="120">2min</div>
+              <div data-value="180">3min</div>
+              <div data-value="300">5min</div>
+              <div data-value="600">10min</div>
+              <div data-value="900">15min</div>
+              <div data-value="1200">20min</div>
+              <div data-value="1800">30min</div>
+            </div>
+          </div>
+        </div>
+        <div id="settings" class="hide">
+          <fieldset>
+            <legend data-i18n="whereToShowCountdown">Where to show countdown</legend>
+            <label class="setting-item">
+              <input type="checkbox" name="whereToShowCountdown" value="page" />
+              <span data-i18n="onPage">On page</span>
+            </label>
+            <label class="setting-item">
+              <input type="checkbox" name="whereToShowCountdown" value="icon" />
+              <span data-i18n="onIcon">On Icon</span>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend data-i18n="whereToStartCountdown">When to start countdown</legend>
+            <label class="setting-item">
+              <input type="radio" name="whenToStartCountdown" value="dom-ready" />
+              <span data-i18n="domReady">Dom Ready</span>
+            </label>
+            <label class="setting-item">
+              <input type="radio" name="whenToStartCountdown" value="finish-loading" />
+              <span data-i18n="onLoad">All resources finish loading</span>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend data-i18n="whenToStartTask">When to start task</legend>
+            <label class="setting-item">
+              <input type="radio" name="whenToStart" value="right-now" />
+              <span data-i18n="rightNow">Right now</span>
+            </label>
+            <label class="setting-item">
+              <input type="radio" name="whenToStart" value="specific-time" />
+              <span data-i18n="specificTime">Specific time</span>
+              <input type="time" step="1" title="specific time" name="timeToStart" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend data-i18n="whenToStopTask">When to stop task</legend>
+            <label class="setting-item">
+              <input type="radio" name="whenToStop" value="never" />
+              <span data-i18n="never">Never</span>
+            </label>
+            <label class="setting-item">
+              <input type="radio" name="whenToStop" value="text" />
+              <span data-i18n="someTextAppears">Some text appears</span>
+              <input
+                type="text"
+                title="String or Regex"
+                data-i18n="textPlaceholder"
+                placeholder="String or Regex"
+                name="textPattern"
+              />
+            </label>
+            <label class="setting-item">
+              <input type="radio" name="whenToStop" value="element" />
+              <span data-i18n="someElementAppears">Some element appears</span>
+              <input
+                type="text"
+                title="CSS Selector"
+                data-i18n="cssSelectorPlaceholder"
+                placeholder="CSS Selector"
+                name="elementSelector"
+              />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend data-i18n="others">Others</legend>
+            <!--<label class="setting-item">-->
+            <!--<input type="checkbox" name="otherOptions" value="refreshAll"/> Refresh all tabs-->
+            <!--</label>-->
+            <label class="setting-item">
+              <input type="checkbox" name="otherOptions" value="notification" />
+              <span data-i18n="notify">Notify when task stop or start</span>
+            </label>
+            <label class="setting-item">
+              <input type="checkbox" name="otherOptions" value="noCache" />
+              <span data-i18n="noCache">No cache</span>
+            </label>
+          </fieldset>
+          <div class="tip">
+            <span data-i18n="tip">All valid settings will take effect immediately.</span>
+          </div>
+        </div>
+        <div class="footer">
+          <a href="#" id="author-btn" data-i18n="supportMe">Support me 👍</a>
+          <a href="#" id="setting-btn" data-i18n="moreSettings">Toggle More Settings</a>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

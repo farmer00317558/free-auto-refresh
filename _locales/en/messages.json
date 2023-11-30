@@ -1,0 +1,80 @@
+{
+  "appName": {
+    "message": "Free Auto Refresh"
+  },
+  "appDesc": {
+    "message": "The best auto refresh extension, it helps you refresh your web page with lots of awesome features. This is 100% free and no ads."
+  },
+  "quickStartLabel": {
+    "message": "Quick start:"
+  },
+  "inputLabel": {
+    "message": "Refresh within seconds:"
+  },
+  "whereToShowCountdown": {
+    "message": "Where to show countdown"
+  },
+  "onPage": {
+    "message": "On page"
+  },
+  "onIcon": {
+    "message": "On icon"
+  },
+  "whereToStartCountdown": {
+    "message": "When to start countdown"
+  },
+  "domReady": {
+    "message": "Dom Ready"
+  },
+  "onLoad": {
+    "message": "All resources finish loading"
+  },
+  "whenToStartTask": {
+    "message": "When to start task"
+  },
+  "rightNow": {
+    "message": "Right now"
+  },
+  "specificTime": {
+    "message": "Specific time"
+  },
+  "whenToStopTask": {
+    "message": "When to stop task"
+  },
+  "never": {
+    "message": "Never"
+  },
+  "someTextAppears": {
+    "message": "Some text appears"
+  },
+  "someElementAppears": {
+    "message": "Some element appears"
+  },
+  "others": {
+    "message": "Others"
+  },
+  "notify": {
+    "message": "Notify when task stop or start"
+  },
+  "noCache": {
+    "message": "No cache"
+  },
+  "tip": {
+    "message": "All valid settings will take effect immediately."
+  },
+  "moreSettings": {
+    "message": "Toggle More Settings"
+  },
+  "inputPlaceholder": {
+    "message": "Refresh interval"
+  },
+  "textPlaceholder": {
+    "message": "String or Regex"
+  },
+  "cssSelectorPlaceholder": {
+    "message": "CSS selector"
+  },
+  "supportMe": {
+    "message": "Support me 👍"
+  }
+}

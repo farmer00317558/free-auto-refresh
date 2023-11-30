@@ -1,0 +1,16 @@
+.free-auto-refresh-extension-countdown {
+  height: 50px;
+  min-width: 80px;
+  line-height: 50px;
+  padding: 0 10px;
+  font-size: 25px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-weight: bold;
+  background-color: #00bcd4;
+  border-top-left-radius: 10px;
+  color: #fff;
+  z-index: 999999999999999999999;
+}

@@ -1,0 +1,170 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.app {
+  width: 420px;
+}
+
+.title {
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.app-inner {
+  padding: 10px;
+}
+
+.main-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section-label {
+  margin-bottom: 5px;
+}
+
+.content {
+  margin-bottom: 10px;
+}
+
+.btn,
+.seconds-input {
+  height: 36px;
+  padding: 0;
+  float: left;
+  box-sizing: border-box;
+}
+
+.seconds-input {
+  flex: 1;
+  border: 1px solid #61b872;
+  line-height: 36px;
+  outline: none;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.seconds-input.stop {
+  border-color: #ed7161;
+}
+
+.btn {
+  width: 60px;
+  border: 0;
+  margin-left: 10px;
+  cursor: pointer;
+  background: url('../image/switch-off.png') no-repeat 0 -12px;
+  background-size: 60px;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn.running {
+  background: url('../image/switch-on.png') no-repeat 0 -12px;
+  background-size: 60px;
+}
+
+.footer {
+  font-size: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-src {
+  color: #ddd;
+}
+
+.icon-src > a:link {
+  color: #ddd;
+}
+
+.icon-src > a:visited {
+  color: #ddd;
+}
+
+.icon-src > a:hover {
+  color: inherit;
+}
+
+.icon-src > a:active {
+  color: #ddd;
+}
+
+.hide {
+  display: none;
+}
+
+.setting-item {
+  display: block;
+}
+
+label {
+  font-size: 12px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-size: 12px;
+}
+
+input[type='text'] {
+  margin-left: 22px;
+  display: none;
+}
+
+.tip {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+.quick-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.quick-start > div {
+  border: 1px solid #ddd;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  transition: all 100ms linear;
+  border-radius: 5px;
+}
+
+.quick-start > div:hover {
+  border: 0;
+  background-color: #61b872;
+  color: white;
+  cursor: pointer;
+}
